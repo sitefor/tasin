@@ -668,7 +668,7 @@
     function startSnake(){
       clearInterval(sTimer);snake=[{x:7,y:7}];sDir={x:1,y:0};sNext={x:1,y:0};sScore=0;sRunning=true;placeFood();
       document.getElementById('snake-result').innerText='Score: 0';
-      sTimer=setInterval(snakeStep,140);drawSnake();
+      sTimer=setInterval(snakeStep,200);drawSnake();
     }
     function snakeStep(){
       sDir=sNext;const head={x:snake[0].x+sDir.x,y:snake[0].y+sDir.y};
