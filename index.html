@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jubayar Islam Tasin | Student & Future IT Expert</title>
+  <meta name="description" content="Jubayar Islam Tasin — Class 8 student at Jhikorgacha B.M. High School. ICT quiz, fun games, skills and contact." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    :root{--bg-gradient:radial-gradient(circle at 50% 0%,#16240c 0%,#101a08 45%,#0a1206 100%);--card-bg:rgba(16,28,8,.55);--card-hover:rgba(28,46,12,.7);--border-glass:rgba(127,255,0,.25);--border-hover:rgba(192,132,252,.6);--primary:#7fff00;--primary-light:#b2ff66;--accent:#99ff33;--success:#34d399;--danger:#f87171;--text-main:#f4fbe9;--text-muted:#c9d8b4}
+    *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+    body{font-family:'Poppins','Hind Siliguri',sans-serif;background:var(--bg-gradient);background-attachment:fixed;color:var(--text-main);line-height:1.6;min-height:100vh;overflow-x:hidden}
+    header{position:sticky;top:0;z-index:1000;background:rgba(10,5,3,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--border-glass)}
+    nav{max-width:1100px;margin:0 auto;padding:.9rem 1.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+    .brand{font-size:1.35rem;font-weight:800;color:#fff;text-decoration:none;display:flex;align-items:center;gap:8px}
+    .brand span{background:linear-gradient(135deg,var(--primary-light),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .nav-links{display:flex;gap:1.2rem;list-style:none;flex-wrap:wrap}
+    .nav-links a{color:var(--text-muted);text-decoration:none;font-size:.95rem;font-weight:500}
+    .nav-links a:hover{color:var(--primary-light)}
+    .container{max-width:1050px;margin:0 auto;padding:0 1.5rem}
+    .hero{text-align:center;padding:4.5rem 1rem 3rem;display:flex;flex-direction:column;align-items:center}
+    .avatar-wrapper{position:relative;width:160px;height:160px;margin-bottom:1.5rem}
+    .avatar-glow{position:absolute;inset:-4px;border-radius:50%;background:linear-gradient(45deg,var(--primary),var(--accent),#e5ffcc);filter:blur(8px);opacity:.8;z-index:1}
+    .avatar-img{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:top center;position:relative;z-index:2;border:3px solid var(--primary-light);background:#16240c}
+    .badge{display:inline-flex;align-items:center;gap:6px;padding:.4rem 1.1rem;background:rgba(127,255,0,.15);border:1px solid var(--border-glass);border-radius:999px;color:var(--primary-light);font-size:.88rem;font-weight:600;margin-bottom:1.2rem}
+    .hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.25;margin-bottom:.8rem}
+    .gradient-text{background:linear-gradient(135deg,#b2ff66,#7fff00);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .hero p{max-width:680px;margin:0 auto 2rem;font-size:1.05rem;color:var(--text-muted)}
+    .btn-group,.social-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+    .social-row{margin-top:1.2rem;gap:.6rem}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:.75rem 1.6rem;border-radius:10px;font-size:.95rem;font-weight:600;text-decoration:none;cursor:pointer;border:none;transition:all .3s;font-family:inherit}
+    .btn-primary{background:linear-gradient(135deg,var(--primary),var(--accent));color:#16290a;box-shadow:0 4px 15px rgba(127,255,0,.35)}
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-glass{background:rgba(255,255,255,.05);border:1px solid var(--border-glass);color:var(--text-main)}
+    .btn-glass:hover{border-color:var(--primary-light);background:rgba(127,255,0,.15);transform:translateY(-2px)}
+    .btn-sm{padding:.5rem 1rem;font-size:.85rem}
+
+    .folio-hero{margin-top:1.5rem;background:linear-gradient(155deg,#7fff00 0%,#99ff33 48%,#b2ff66 100%);border-radius:28px;padding:2.2rem 2.2rem 1.6rem;position:relative;overflow:hidden;color:#16290a}
+    .folio-grid{display:grid;grid-template-columns:1.2fr .8fr .9fr;gap:1.5rem;align-items:center}
+    .folio-eyebrow{font-size:1.05rem;font-weight:500;margin-bottom:.4rem}
+    .folio-big{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:800;line-height:1.02;letter-spacing:-1px}
+    .folio-photo{width:100%;height:400px;object-fit:cover;object-position:top center;border-radius:20px;display:block}
+    .folio-quote h3{font-size:1.25rem;line-height:1.35;margin-bottom:.7rem}
+    .folio-quote p{color:rgba(22,41,10,.88);font-size:.92rem;font-weight:500}
+    .folio-nums{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.8rem}
+    .folio-nums b{color:#2f4d0e;font-size:.85rem;display:block}
+    .folio-nums span{font-size:.92rem}
+
+
+
+    .quiz-sets{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;margin-bottom:1.4rem}
+    .quiz-set-btn{padding:.55rem 1.1rem;border-radius:999px;border:1px solid var(--border-glass);background:rgba(255,255,255,.05);color:var(--text-main);cursor:pointer;font-family:inherit;font-size:.9rem;font-weight:600}
+    .quiz-set-btn.active{background:linear-gradient(135deg,var(--primary),var(--accent));color:#16290a;border-color:transparent}
+    .qa-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+    .qa-card{text-align:left;width:100%;font-family:inherit;cursor:pointer}
+    .qa-card .qa-a{display:none;margin-top:.7rem;color:var(--success);font-size:.93rem}
+    .qa-card.open .qa-a{display:block}
+    .qa-card .qa-hint{color:var(--primary-light);font-size:.82rem;margin-top:.6rem;display:block}
+    .ttt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;max-width:240px;margin:0 auto 1rem}
+    .ttt-cell{aspect-ratio:1;font-size:1.7rem;font-weight:800;border-radius:10px;border:1px solid var(--border-glass);background:rgba(255,255,255,.05);color:#fff;cursor:pointer;font-family:inherit}
+    .ttt-cell.win{background:rgba(52,211,153,.25);border-color:var(--success)}
+    .snake-wrap{text-align:center}
+    #snake-canvas{background:#0a1206;border:1px solid var(--border-glass);border-radius:12px;max-width:100%}
+    .dpad{display:grid;grid-template-columns:repeat(3,56px);gap:.4rem;justify-content:center;margin-top:.8rem}
+    .dpad button{padding:.55rem 0;border-radius:8px;border:1px solid var(--border-glass);background:rgba(255,255,255,.05);color:#fff;cursor:pointer;font-size:1rem}
+    .scramble-word{font-size:1.5rem;font-weight:800;letter-spacing:4px;text-align:center;margin:.6rem 0;color:var(--primary-light)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+    .gallery-item{border-radius:20px;overflow:hidden;border:1px solid var(--border-glass);background:var(--card-bg);box-shadow:0 18px 40px rgba(0,0,0,.32)}
+    .gallery-item img{width:100%;height:340px;object-fit:cover;object-position:top center;display:block;transition:transform .4s}
+    .gallery-item:hover img{transform:scale(1.04)}
+    .gallery-item figcaption{padding:1rem 1.1rem;font-size:.92rem}
+    .gallery-item figcaption b{display:block;margin-bottom:.2rem}
+    .gallery-item figcaption span{color:var(--text-muted)}
+    .folio-band{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:1.6rem .4rem 0}
+    .folio-band small{color:var(--text-muted);max-width:150px}
+    .dream-wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:start}
+    .dream-kicker{color:var(--primary);font-weight:600;margin-bottom:.8rem}
+    .dream-big{font-size:clamp(1.9rem,4.5vw,3rem);font-weight:800;line-height:1.15}
+    .dream-side p{font-size:1.15rem;margin-bottom:1rem}
+    .dream-side small{color:var(--text-muted);display:block;margin-bottom:1.2rem}
+    @media(max-width:800px){.folio-grid{grid-template-columns:1fr}.folio-photo{height:340px}.folio-nums{grid-template-columns:repeat(2,1fr)}.dream-wrap{grid-template-columns:1fr}}
+    section{padding:3.5rem 0}
+    .section-title{text-align:center;font-size:2rem;margin-bottom:2.2rem}
+    .section-title span{color:var(--primary-light)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+    .glass-card,.quiz-card,.contact-card{background:var(--card-bg);border:1px solid var(--border-glass);backdrop-filter:blur(16px);border-radius:16px;padding:1.8rem;transition:all .3s}
+    .glass-card:hover{background:var(--card-hover);border-color:var(--border-hover);transform:translateY(-4px)}
+    .card-icon{width:50px;height:50px;border-radius:12px;background:rgba(127,255,0,.15);border:1px solid var(--border-glass);display:flex;align-items:center;justify-content:center;font-size:1.35rem;color:var(--primary-light);margin-bottom:1.2rem}
+    .glass-card h3{font-size:1.2rem;margin-bottom:.5rem}
+    .glass-card p,.contact-card p{color:var(--text-muted);font-size:.95rem}
+    .skill-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+    .skill-tag{font-size:.8rem;padding:.25rem .75rem;border-radius:20px;background:rgba(127,255,0,.1);border:1px solid var(--border-glass);color:var(--primary-light)}
+    .quiz-card{max-width:680px;margin:0 auto;padding:2.2rem}
+    .quiz-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.2rem;border-bottom:1px solid var(--border-glass);padding-bottom:.8rem}
+    .quiz-progress-bar{width:100%;height:6px;background:rgba(255,255,255,.08);border-radius:10px;overflow:hidden;margin-bottom:1.5rem}
+    .quiz-progress-fill{height:100%;width:20%;background:linear-gradient(90deg,var(--primary),var(--accent));transition:width .3s}
+    .question-title{font-size:1.15rem;margin-bottom:1.3rem}
+    .quiz-options{display:flex;flex-direction:column;gap:.75rem}
+    .option-btn{width:100%;padding:.85rem 1.2rem;text-align:left;background:rgba(255,255,255,.04);border:1px solid var(--border-glass);border-radius:10px;color:var(--text-main);font-size:.95rem;cursor:pointer;font-family:inherit;display:flex;justify-content:space-between;align-items:center}
+    .option-btn:hover:not(:disabled){background:rgba(127,255,0,.2);border-color:var(--primary-light)}
+    .option-btn.correct{background:rgba(52,211,153,.2)!important;border-color:var(--success)!important;color:var(--success)!important}
+    .option-btn.wrong{background:rgba(248,113,113,.2)!important;border-color:var(--danger)!important;color:var(--danger)!important}
+    .feedback-box{margin-top:1.2rem;padding:.9rem;border-radius:8px;font-size:.92rem;display:none}
+    .feedback-box.correct{background:rgba(52,211,153,.1);border:1px solid var(--success);color:var(--success)}
+    .feedback-box.wrong{background:rgba(248,113,113,.1);border:1px solid var(--danger);color:var(--danger)}
+    .quiz-footer{display:flex;justify-content:flex-end;margin-top:1.5rem}
+    .reaction-box{height:150px;border-radius:12px;display:flex;align-items:center;justify-content:center;text-align:center;padding:1rem;cursor:pointer;font-weight:600;background:rgba(248,113,113,.25);border:1px solid var(--danger);user-select:none;margin-bottom:1rem}
+    .reaction-box.waiting{background:rgba(52,211,153,.25);border-color:var(--success)}
+    .reaction-box.idle{background:rgba(255,255,255,.05);border-color:var(--border-glass)}
+    .typing-text{background:rgba(10,18,6,.65);border:1px solid var(--border-glass);border-radius:8px;padding:.9rem;margin-bottom:.8rem;font-size:.95rem}
+    .game-input{width:100%;padding:.75rem;background:rgba(10,18,6,.65);border:1px solid var(--border-glass);border-radius:8px;color:#fff;font-family:inherit;margin-bottom:.8rem}
+    .game-input:focus{outline:none;border-color:var(--primary-light)}
+    .game-status{font-size:.9rem;color:var(--primary-light);min-height:1.4em;margin-bottom:.8rem}
+    .memory-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-bottom:1rem}
+    .memory-card{aspect-ratio:1;border-radius:10px;border:1px solid var(--border-glass);background:rgba(127,255,0,.15);font-size:1.6rem;cursor:pointer;color:transparent;display:flex;align-items:center;justify-content:center}
+    .memory-card.flipped{background:rgba(255,255,255,.08);color:inherit}
+    .memory-card.matched{background:rgba(52,211,153,.2);border-color:var(--success);color:inherit;cursor:default}
+    .contact-card{max-width:650px;margin:0 auto;padding:2.2rem;text-align:center}
+    .social-btn-list{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap;margin:1.5rem 0 2rem}
+    .social-btn{display:inline-flex;align-items:center;gap:8px;padding:.65rem 1.2rem;border-radius:8px;font-size:.9rem;font-weight:500;text-decoration:none;color:var(--text-main);border:1px solid var(--border-glass);background:rgba(255,255,255,.04)}
+    .social-btn:hover{background:rgba(127,255,0,.2);border-color:var(--primary-light)}
+    .form-group{text-align:left;margin-bottom:1rem}
+    .form-group label{display:block;margin-bottom:.4rem;font-size:.88rem;color:var(--text-muted)}
+    .form-group input,.form-group textarea{width:100%;padding:.75rem;background:rgba(10,18,6,.65);border:1px solid var(--border-glass);border-radius:8px;color:#fff;font-family:inherit}
+    .form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--primary-light)}
+
+    .char-correct{color:var(--success)}
+    .char-wrong{color:var(--danger);background:rgba(248,113,113,.2);border-radius:3px}
+    .typing-progress{height:6px;background:rgba(255,255,255,.08);border-radius:10px;overflow:hidden;margin-bottom:.8rem}
+    .typing-progress-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--primary),var(--accent));transition:width .2s}
+    .memory-card{transition:transform .25s,background .25s}
+    .memory-card.flipped{transform:scale(1.06)}
+    .guess-row{display:flex;gap:.6rem;margin-bottom:.8rem}
+    .guess-row .game-input{margin-bottom:0}
+    .big-emoji{font-size:2rem;text-align:center;margin-bottom:.5rem}
+    footer{text-align:center;padding:2rem 1.5rem;border-top:1px solid var(--border-glass);color:var(--text-muted);font-size:.9rem;margin-top:3.5rem}
+    @media(max-width:650px){.nav-links{gap:.8rem}.nav-links a{font-size:.85rem}.memory-grid{grid-template-columns:repeat(3,1fr)}}
+  </style>
+  <style>
+    ::selection{background:#7fff00;color:#16290a}
+    html{scrollbar-color:#7fff00 #0a1206}
+    header{box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .brand{letter-spacing:-.3px;font-size:1.45rem}
+    .nav-links a{position:relative;padding:4px 0}
+    .nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:linear-gradient(90deg,#7fff00,#99ff33);border-radius:2px;transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .btn{transition:transform .2s,box-shadow .2s,background .2s}
+    .btn:active{transform:scale(.97)}
+    .btn:focus-visible,.option-btn:focus-visible,.memory-card:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #b2ff66;outline-offset:2px}
+    .folio-hero{box-shadow:0 30px 60px rgba(127,255,0,.18),inset 0 1px 0 rgba(255,255,255,.35)}
+    .folio-hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.16),transparent 65%);top:-220px;right:-120px;pointer-events:none}
+    .folio-photo{box-shadow:0 24px 45px rgba(0,0,0,.4);border:4px solid rgba(255,255,255,.55)}
+    .folio-nums{border-top:1px solid rgba(255,255,255,.35);padding-top:1.1rem}
+    .glass-card,.quiz-card,.contact-card{border-radius:20px;box-shadow:0 18px 40px rgba(0,0,0,.32),inset 0 1px 0 rgba(255,255,255,.06)}
+    .section-title{letter-spacing:-.5px;position:relative}
+    .section-title::after{content:"";display:block;width:64px;height:4px;border-radius:4px;background:linear-gradient(90deg,#7fff00,#99ff33);margin:.7rem auto 0}
+    .card-icon{box-shadow:0 10px 22px rgba(127,255,0,.25)}
+    .social-btn,.btn-glass{backdrop-filter:blur(8px)}
+    .folio-band .btn-glass{border-radius:999px}
+    @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+    @media(max-width:650px){.folio-hero{padding:1.5rem 1.2rem 1.2rem;border-radius:22px}.folio-big{letter-spacing:-.5px}}
+  </style>
+  <style>body{letter-spacing:.1px}.folio-big{text-shadow:0 2px 18px rgba(0,0,0,.18)}.btn-primary{box-shadow:0 6px 18px rgba(190,110,64,.28)}</style>
+  <style>
+    /* Q&A reading comfort: high-contrast warm cards, soft answer color, airy line-height */
+    .qa-card{background:linear-gradient(180deg,rgba(66,44,29,.92),rgba(48,32,21,.92));border:1px solid rgba(237,168,120,.38);padding:1.7rem;border-radius:18px;box-shadow:0 14px 30px rgba(0,0,0,.28)}
+    .qa-card:hover{background:linear-gradient(180deg,rgba(76,50,33,.95),rgba(54,36,24,.95));border-color:rgba(237,168,120,.65)}
+    .qa-card h3{color:#f4fbe9;font-size:1.1rem;line-height:1.55;font-weight:700}
+    .qa-card .qa-hint{color:#b2ff66;font-size:.85rem}
+    .qa-card .qa-a{color:#d3e8d8;line-height:1.8;font-size:.98rem;background:rgba(255,255,255,.045);border-left:3px solid #9fc7a8;border-radius:0 8px 8px 0;padding:.7rem .9rem}
+    .qa-card.open{border-color:#b2ff66;background:linear-gradient(180deg,rgba(34,54,18,.96),rgba(24,40,12,.96))}
+    #qa p{color:#c9d8b4!important}
+  
+    /* ===== Premium UI/UX polish — lime theme ===== */
+    html{scroll-behavior:smooth}
+    body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    .glass-card,.contact-card,.quiz-card,.qa-card{transition:transform .35s cubic-bezier(.22,.8,.3,1),box-shadow .35s,border-color .35s}
+    .glass-card:hover,.contact-card:hover{transform:translateY(-6px);border-color:rgba(127,255,0,.55);box-shadow:0 22px 44px rgba(0,0,0,.45),0 0 0 1px rgba(127,255,0,.12),0 10px 30px rgba(127,255,0,.08)}
+    .btn{transition:transform .25s cubic-bezier(.22,.8,.3,1),box-shadow .25s,background .25s,border-color .25s}
+    .btn:active{transform:scale(.97)}
+    .btn-primary{box-shadow:0 8px 24px rgba(127,255,0,.35),inset 0 1px 0 rgba(255,255,255,.5);font-weight:700}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(127,255,0,.45),inset 0 1px 0 rgba(255,255,255,.5)}
+    .gallery-item{overflow:hidden;border-radius:18px;transition:transform .35s cubic-bezier(.22,.8,.3,1),box-shadow .35s}
+    .gallery-item:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.5),0 0 0 1px rgba(127,255,0,.25)}
+    .gallery-item img{transition:transform .6s cubic-bezier(.22,.8,.3,1)}
+    .gallery-item:hover img{transform:scale(1.06)}
+    .skill-tag{transition:all .25s}
+    .skill-tag:hover{background:rgba(127,255,0,.16);border-color:rgba(127,255,0,.6);transform:translateY(-2px)}
+    .option-btn{transition:all .25s}
+    .option-btn:hover{border-color:rgba(127,255,0,.65);background:rgba(127,255,0,.08);transform:translateX(4px)}
+    .quiz-set-btn{transition:all .25s}
+    .quiz-set-btn:hover{border-color:rgba(127,255,0,.65);transform:translateY(-2px)}
+    .form-group input:focus,.form-group textarea:focus,.game-input:focus{outline:none;border-color:#7fff00;box-shadow:0 0 0 3px rgba(127,255,0,.22)}
+    .quiz-progress-fill{background:linear-gradient(90deg,#7fff00,#b2ff66);transition:width .5s cubic-bezier(.22,.8,.3,1)}
+    .folio-photo img{box-shadow:0 24px 50px rgba(10,30,0,.45);outline:6px solid rgba(255,255,255,.35);outline-offset:-6px}
+    .section-title{letter-spacing:.2px}
+    .memory-card{transition:transform .3s,border-color .3s}
+    .memory-card:hover{transform:translateY(-4px);border-color:rgba(127,255,0,.55)}
+    ::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#0a1206}::-webkit-scrollbar-thumb{background:linear-gradient(#7fff00,#4d9900);border-radius:8px}
+    @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+
+    .folio-hero p{color:rgba(20,38,8,.92)!important;font-weight:500}
+    .folio-hero .folio-quote h3{color:#16290a}
+    .folio-hero .badge,.folio-hero .badge *{color:#fff!important}
+    .folio-hero .btn,.folio-hero .btn *{color:#fff!important}
+
+    .rotator{display:inline-block;height:1.3em;overflow:hidden;vertical-align:bottom}
+    .rotator-inner{display:flex;flex-direction:column;animation:rotatorSlide 10s cubic-bezier(.65,0,.35,1) infinite}
+    .rotator-inner span{height:1.3em;line-height:1.3em;font-weight:700;color:#0d2603;white-space:nowrap}
+    @keyframes rotatorSlide{0%,20%{transform:translateY(0)}25%,45%{transform:translateY(-1.3em)}50%,70%{transform:translateY(-2.6em)}75%,95%{transform:translateY(-3.9em)}100%{transform:translateY(-5.2em)}}
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="brand"><span>Zubayar Tasin</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#quiz">ICT Quiz</a></li>
+        <li><a href="#qa">Q&amp;A</a></li>
+        <li><a href="#games">Fun Games</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary btn-sm" style="border-radius:999px">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
+    </nav>
+  </header>
+  <main>
+    <section class="container" style="padding-top:1rem">
+      <div class="folio-hero">
+        <div class="folio-grid">
+          <div>
+            <p class="folio-eyebrow">Hey, I'm Zubayar <span class="rotator"><span class="rotator-inner"><span>— Class 8 Student</span><span>— Future IT Expert</span><span>— Football Lover</span><span>— Mobile Gamer</span><span>— Class 8 Student</span></span></span></p>
+            <h2 class="folio-big">Future<br>IT Expert</h2>
+            <div class="badge" style="margin-top:1.2rem;background:rgba(0,0,0,.25);border-color:rgba(255,255,255,.35);color:#fff"><i class="fa-solid fa-graduation-cap"></i> Class 8 • Jhikorgacha B.M. High School</div>
+            <p style="color:rgba(255,255,255,.9);font-size:.95rem;max-width:420px">আমি <strong>Jubayar Islam Tasin</strong> — খেলাধুলা, সাইক্লিং ও গেমিংয়ের পাশাপাশি পাঠ্যবই অনুযায়ী কম্পিউটার প্রযুক্তি চর্চা করছি।</p>
+          </div>
+          <img src="46028.jpg" alt="Jubayar Islam Tasin" class="folio-photo" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22><rect width=%22400%22 height=%22400%22 fill=%22%23ff6a1f%22/><text x=%2250%25%22 y=%2258%25%22 font-size=%22160%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22>JT</text></svg>';" />
+          <div class="folio-quote">
+            <h3>Technology should feel simple — প্রযুক্তি হবে সহজ!</h3>
+            <p>আমি Class 8-এর একজন ছাত্র — পড়াশোনার পাশাপাশি খেলাধুলা আর নতুন জিনিস জানতে ভালোবাসি। এই site-এ আমার পরিচিতি, পছন্দ, quiz আর মজার game পাবে।</p>
+            <div class="btn-group" style="justify-content:flex-start;margin-top:1.2rem">
+              <a href="#quiz" class="btn btn-glass btn-sm" style="background:rgba(0,0,0,.3);border-color:rgba(255,255,255,.4);color:#fff"><i class="fa-solid fa-gamepad"></i> ICT Quiz</a>
+              <a href="#games" class="btn btn-glass btn-sm" style="background:rgba(0,0,0,.3);border-color:rgba(255,255,255,.4);color:#fff"><i class="fa-solid fa-dice"></i> Fun Games</a>
+            </div>
+          </div>
+        </div>
+        <div class="folio-nums">
+          <div><b># 01</b><span>ICT Skills • আইসিটি</span></div>
+          <div><b># 02</b><span>Football &amp; Cricket • খেলাধুলা</span></div>
+          <div><b># 03</b><span>Mobile Gaming • গেমিং</span></div>
+          <div><b># 04</b><span>Cycling • সাইকেলিং</span></div>
+        </div>
+      </div>
+      <div class="folio-band">
+        <small>Connect with me — যোগাযোগ করো</small>
+        <a href="https://www.facebook.com/jubayar.islam.thasin" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-sm"><i class="fa-brands fa-facebook" style="color:#1877f2"></i> Facebook</a>
+        <a href="https://www.instagram.com/tasi70765" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-sm"><i class="fa-brands fa-instagram" style="color:#e1306c"></i> Instagram</a>
+        <a href="mailto:tasinonthegamer@gmail.com" class="btn btn-glass btn-sm"><i class="fa-solid fa-envelope" style="color:#7fff00"></i> Gmail • tasinonthegamer@gmail.com</a>
+      </div>
+    </section>
+    <section class="container">
+      <div class="dream-wrap">
+        <div>
+          <p class="dream-kicker">Behind the Dream • স্বপ্নের গল্প</p>
+          <h2 class="dream-big">Learning Today,<br>Building Tomorrow's<br>Technology</h2>
+        </div>
+        <div class="dream-side">
+          <p>I'm a Class 8 student — আমার স্বপ্ন, বড় হয়ে একজন IT Expert হওয়া। সেই লক্ষ্য নিয়েই এগিয়ে যাচ্ছি।</p>
+          <small>এটা শুধুই আমার স্বপ্নের কথা — এখন আমি স্কুলের একজন সাধারণ ছাত্র।</small>
+          <a href="#contact" class="btn btn-primary" style="border-radius:999px">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2 class="section-title">ব্যক্তিগত <span>পরিচিতি (About Me)</span></h2>
+      <div class="grid">
+        <div class="glass-card"><div class="card-icon"><i class="fa-solid fa-school"></i></div><h3>Education • শিক্ষা</h3><p>বর্তমানে <strong>ঝিকরগাছা বি.এম. হাই স্কুল</strong> (Jhikorgacha B.M. High School)-এ অষ্টম শ্রেণিতে পড়ছি। স্কুলের পাঠ্যসূচির সাথে কম্পিউটার শিক্ষা মনোযোগ দিয়ে শিখছি।</p></div>
+        <div class="glass-card"><div class="card-icon"><i class="fa-solid fa-compass"></i></div><h3>Career Dream • স্বপ্ন</h3><p>বড় হয়ে একজন প্রথম সারির <strong>আইটি এক্সপার্ট (IT Expert)</strong> হওয়া। স্কুল পর্যায় থেকেই কম্পিউটার বেসিক্স ও লজিক্যাল স্কিল মজবুত করছি।</p></div>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <h2 class="section-title">দক্ষতা ও শখ <span>Skills & Passions</span></h2>
+      <div class="grid">
+        <div class="glass-card"><div class="card-icon"><i class="fa-solid fa-laptop"></i></div><h3>Class 8 ICT • পাঠ্যবইয়ের বিষয়</h3><p>অষ্টম শ্রেণির তথ্য ও যোগাযোগ প্রযুক্তি বইয়ে যেসব বিষয় আছে:</p><div class="skill-tags"><span class="skill-tag">MS Word Typing</span><span class="skill-tag">MS Excel Spreadsheet</span><span class="skill-tag">Windows OS</span><span class="skill-tag">Safe Browsing</span></div></div>
+        <div class="glass-card"><div class="card-icon"><i class="fa-solid fa-futbol"></i></div><h3>Sports & Fitness</h3><p>ফুটবল ও ক্রিকেট—দুটোই খুব ভালো খেলি। বন্ধুদের সাথে মাঠে খেলাধুলা করা আমার সবচেয়ে পছন্দের অবসর।</p><div class="skill-tags"><span class="skill-tag">ফুটবল খেলা</span><span class="skill-tag">ক্রিকেট খেলা</span><span class="skill-tag">টিমওয়ার্ক</span></div></div>
+        <div class="glass-card"><div class="card-icon"><i class="fa-solid fa-gamepad"></i></div><h3>Riding & Gaming</h3><p>সাইকেল ও মোটরসাইকেল দুটোই সহজে চালাতে পারি। এছাড়া অবসর সময়ে মোবাইলে স্ট্র্যাটেজিক গেম খেলি।</p><div class="skill-tags"><span class="skill-tag">সাইক্লিং</span><span class="skill-tag">মোটরসাইকেল রাইডিং</span><span class="skill-tag">মোবাইল গেমিং</span></div></div>
+      </div>
+    </section>
+
+    <section id="quiz" class="container">
+      <h2 class="section-title">Class 8 <span>কুইজ • Quiz Arena</span></h2>
+      <div class="quiz-sets">
+        <button class="quiz-set-btn active" data-set="ict" onclick="selectQuizSet('ict')">💻 ICT • আইসিটি</button>
+        <button class="quiz-set-btn" data-set="math" onclick="selectQuizSet('math')">🔢 গণিত • Math</button>
+        <button class="quiz-set-btn" data-set="english" onclick="selectQuizSet('english')">🔤 English</button>
+        <button class="quiz-set-btn" data-set="bangla" onclick="selectQuizSet('bangla')">📖 বাংলা</button>
+        <button class="quiz-set-btn" data-set="science" onclick="selectQuizSet('science')">🔬 বিজ্ঞান • Science</button>
+      </div>
+      <div class="quiz-card">
+        <div class="quiz-header"><span style="font-weight:600;color:var(--primary-light)" id="quiz-question-number">প্রশ্ন ১ / ৫</span><span style="font-size:.9rem;color:var(--text-muted)" id="quiz-score-tracker" aria-live="polite">Score: 0</span></div>
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quiz-progress"></div></div>
+        <div id="quiz-content">
+          <h4 class="question-title" id="quiz-question-text">প্রশ্ন লোড হচ্ছে...</h4>
+          <div class="quiz-options" id="quiz-options-container"></div>
+          <div class="feedback-box" id="quiz-feedback" aria-live="polite"></div>
+          <div class="quiz-footer"><button class="btn btn-primary" id="quiz-next-btn" style="display:none" onclick="nextQuestion()">পরবর্তী প্রশ্ন <i class="fa-solid fa-arrow-right"></i></button></div>
+        </div>
+        <div id="quiz-result-view" style="display:none;text-align:center;padding:1.5rem 0">
+          <div style="font-size:3.5rem;margin-bottom:1rem">🏆</div>
+          <h3 style="font-size:1.5rem;margin-bottom:.5rem" id="quiz-final-title">সাবাশ!</h3>
+          <p style="color:var(--text-muted);margin-bottom:1.5rem" id="quiz-final-score"></p>
+          <button class="btn btn-primary" onclick="restartQuiz()"><i class="fa-solid fa-rotate-right"></i> আবার কুইজ খেলুন</button>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="qa" class="container">
+      <h2 class="section-title">Class 8 ICT <span>প্রশ্ন-উত্তর • Q&amp;A</span></h2>
+      <p style="text-align:center;color:var(--text-muted);max-width:620px;margin:-1rem auto 2rem">পাঠ্যবইয়ের গুরুত্বপূর্ণ প্রশ্ন — কার্ডে ক্লিক করলেই উত্তর দেখা যাবে। নিজে নিজে যাচাই করো!</p>
+      <div class="qa-grid">
+        <button class="glass-card qa-card" onclick="this.classList.toggle('open')"><h3>প্রশ্ন ১: ICT কী?</h3><span class="qa-hint">উত্তর দেখতে ক্লিক করো 👇</span><span class="qa-a">উত্তর: তথ্য সংগ্রহ, সংরক্ষণ, প্রক্রিয়াকরণ ও আদান-প্রদানে প্রযুক্তির ব্যবহারই হলো তথ্য ও যোগাযোগ প্রযুক্তি (ICT)।</span></button>
+        <button class="glass-card qa-card" onclick="this.classList.toggle('open')"><h3>প্রশ্ন ২: কম্পিউটার নেটওয়ার্ক কী?</h3><span class="qa-hint">উত্তর দেখতে ক্লিক করো 👇</span><span class="qa-a">উত্তর: তথ্য ও সম্পদ ভাগাভাগির জন্য দুই বা ততোধিক কম্পিউটারের পরস্পর সংযোগই নেটওয়ার্ক।</span></button>
+        <button class="glass-card qa-card" onclick="this.classList.toggle('open')"><h3>প্রশ্ন ৩: LAN ও WAN-এর পার্থক্য কী?</h3><span class="qa-hint">উত্তর দেখতে ক্লিক করো 👇</span><span class="qa-a">উত্তর: LAN ছোট এলাকায় (স্কুল/অফিস) সীমিত; WAN বিস্তৃত এলাকাজুড়ে (দেশ-বিদেশ) বিস্তৃত — ইন্টারনেটই সবচেয়ে বড় WAN।</span></button>
+        <button class="glass-card qa-card" onclick="this.classList.toggle('open')"><h3>প্রশ্ন ৪: ইন্টারনেট কী?</h3><span class="qa-hint">উত্তর দেখতে ক্লিক করো 👇</span><span class="qa-a">উত্তর: সারা বিশ্বের কম্পিউটার নেটওয়ার্কগুলোর পরস্পর সংযুক্ত বিশাল নেটওয়ার্কই ইন্টারনেট।</span></button>
+        <button class="glass-card qa-card" onclick="this.classList.toggle('open')"><h3>প্রশ্ন ৫: ওয়ার্ড প্রসেসর কী কাজে লাগে?</h3><span class="qa-hint">উত্তর দেখতে ক্লিক করো 👇</span><span class="qa-a">উত্তর: লেখা তৈরি, সম্পাদনা, সাজানো ও ছাপানোর কাজে — যেমন MS Word দিয়ে চিঠি, রচনা, প্রতিবেদন তৈরি হয়।</span></button>
+        <button class="glass-card qa-card" onclick="this.classList.toggle('open')"><h3>প্রশ্ন ৬: স্প্রেডশিট কী?</h3><span class="qa-hint">উত্তর দেখতে ক্লিক করো 👇</span><span class="qa-a">উত্তর: সারি ও কলামে সাজানো হিসাব-নিকাশের প্রোগ্রাম (যেমন MS Excel) — ফলাফল, বাজেট, হিসাব তৈরিতে ব্যবহৃত হয়।</span></button>
+        <button class="glass-card qa-card" onclick="this.classList.toggle('open')"><h3>প্রশ্ন ৭: কম্পিউটার ভাইরাস কী?</h3><span class="qa-hint">উত্তর দেখতে ক্লিক করো 👇</span><span class="qa-a">উত্তর: ক্ষতিকর প্রোগ্রাম যা নিজে নিজে ছড়িয়ে কম্পিউটারের তথ্য নষ্ট বা চুরি করতে পারে। অ্যান্টিভাইরাস দিয়ে প্রতিরোধ করা যায়।</span></button>
+        <button class="glass-card qa-card" onclick="this.classList.toggle('open')"><h3>প্রশ্ন ৮: নিরাপদ ইন্টারনেট ব্যবহারের ১টি নিয়ম বলো।</h3><span class="qa-hint">উত্তর দেখতে ক্লিক করো 👇</span><span class="qa-a">উত্তর: অপরিচিত লিংকে ক্লিক না করা, শক্তিশালী পাসওয়ার্ড ব্যবহার করা এবং ব্যক্তিগত তথ্য অপরিচিত কারো সাথে শেয়ার না করা।</span></button>
+      </div>
+    </section>
+
+    <section id="games" class="container">
+      <h2 class="section-title">মজার <span>Game Zone 🎮</span></h2>
+      <div class="grid">
+        <div class="glass-card">
+          <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Reaction Test • রিঅ্যাকশন</h3>
+          <p style="margin-bottom:1rem">বক্সে ক্লিক করো, সবুজ হলেই যত দ্রুত পারো ক্লিক! 200ms-এর নিচে মানেই Lightning ⚡</p>
+          <div class="reaction-box idle" id="reaction-box" onclick="reactionClick()">Click to Start</div>
+          <p class="game-status" id="reaction-result" aria-live="polite"></p>
+          <p class="game-status" id="reaction-stats"></p>
+        </div>
+        <div class="glass-card">
+          <div class="card-icon"><i class="fa-solid fa-keyboard"></i></div>
+          <h3>Typing Speed • টাইপিং — 30s</h3>
+          <p style="margin-bottom:1rem">লাইনটা টাইপ করো — ঠিক অক্ষর সবুজ, ভুল লাল দেখাবে। Live WPM + Accuracy পাবে!</p>
+          <div class="typing-text" id="typing-text"></div>
+          <div class="typing-progress"><div class="typing-progress-fill" id="typing-progress-fill"></div></div>
+          <p class="game-status">⏱ Time: <span id="typing-time">30</span>s • <span id="typing-live"></span></p>
+          <input class="game-input" id="typing-input" type="text" placeholder="Start বাটনে ক্লিক করে টাইপ শুরু করো..." disabled autocomplete="off" />
+          <p class="game-status" id="typing-result" aria-live="polite"></p>
+          <button class="btn btn-primary btn-sm" onclick="startTyping()">▶ Start Typing</button>
+        </div>
+        <div class="glass-card">
+          <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>Memory Match • মেমরি</h3>
+          <p style="margin-bottom:1rem">কার্ড উল্টে জোড়া মেলাও — টাইমার চলবে, শেষে ⭐ rating পাবে!</p>
+          <p class="game-status">⏱ <span id="memory-time">0:00</span> • Moves: <span id="memory-moves">0</span> • Matched: <span id="memory-matched">0</span>/6</p>
+          <div class="memory-grid" id="memory-grid"></div>
+          <p class="game-status" id="memory-result" aria-live="polite"></p>
+          <button class="btn btn-primary btn-sm" onclick="startMemory()">🔄 New Game</button>
+        </div>
+        <div class="glass-card">
+          <div class="card-icon"><i class="fa-solid fa-dice"></i></div>
+          <h3>Guess the Number • সংখ্যা ধরো</h3>
+          <p style="margin-bottom:1rem">আমি ১–১০০ এর মধ্যে একটা সংখ্যা ভেবেছি। Hint দেখে guess করো — কত attempt-এ পারো?</p>
+          <div class="big-emoji" id="guess-face">🤔</div>
+          <div class="guess-row">
+            <input class="game-input" id="guess-input" type="number" min="1" max="100" placeholder="তোমার guess (1-100)" />
+            <button class="btn btn-primary btn-sm" onclick="makeGuess()">Guess</button>
+          </div>
+          <p class="game-status" id="guess-result" aria-live="polite">Attempts: 0</p>
+          <button class="btn btn-glass btn-sm" onclick="startGuess()">🔄 New Number</button>
+        </div>
+        <div class="glass-card">
+          <div class="card-icon"><i class="fa-solid fa-worm"></i></div>
+          <h3>Snake • সাপের খেলা 🐍</h3>
+          <p style="margin-bottom:1rem">আপেল খাও, লম্বা হও! দেয়ালে বা নিজের গায়ে লাগলেই game over। PC-তে Arrow key, মোবাইলে বাটন।</p>
+          <div class="snake-wrap">
+            <canvas id="snake-canvas" width="300" height="300"></canvas>
+            <p class="game-status" id="snake-result" aria-live="polite">Score: 0</p>
+            <button class="btn btn-primary btn-sm" onclick="startSnake()">▶ Start Snake</button>
+            <div class="dpad">
+              <span></span><button onclick="setDir(0,-1)">⬆</button><span></span>
+              <button onclick="setDir(-1,0)">⬅</button><button onclick="setDir(0,1)">⬇</button><button onclick="setDir(1,0)">➡</button>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card">
+          <div class="card-icon"><i class="fa-solid fa-x"></i></div>
+          <h3>Tic Tac Toe • কাটাকুটি ⭕</h3>
+          <p style="margin-bottom:1rem">তুমি X, কম্পিউটার O — পরপর ৩টা মেলালেই জিত!</p>
+          <div class="ttt-grid" id="ttt-grid"></div>
+          <p class="game-status" id="ttt-result" aria-live="polite">তোমার পালা — যেকোনো ঘরে ক্লিক করো!</p>
+          <p class="game-status" id="ttt-score">You: 0 • Computer: 0 • Draw: 0</p>
+          <button class="btn btn-primary btn-sm" onclick="startTTT()">🔄 New Game</button>
+        </div>
+        <div class="glass-card">
+          <div class="card-icon"><i class="fa-solid fa-font"></i></div>
+          <h3>ICT Word Scramble • শব্দ সাজাও</h3>
+          <p style="margin-bottom:1rem">এলোমেলো ICT শব্দটা সাজিয়ে আসল শব্দ বানাও — Hint দেওয়া আছে!</p>
+          <div class="scramble-word" id="scramble-word">------</div>
+          <p class="game-status" id="scramble-hint"></p>
+          <input class="game-input" id="scramble-input" type="text" placeholder="তোমার উত্তর লিখো..." autocomplete="off" style="text-transform:uppercase" />
+          <p class="game-status" id="scramble-result" aria-live="polite">Score: 0</p>
+          <button class="btn btn-primary btn-sm" onclick="checkScramble()">✔ Check</button>
+          <button class="btn btn-glass btn-sm" onclick="nextScramble()">⏭ Next Word</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="container">
+      <h2 class="section-title">ছবির <span>Gallery • গ্যালারি</span></h2>
+      <div class="gallery-grid">
+        <figure class="gallery-item"><img src="photo-rooftop.jpg" alt="Zubayar Tasin in Brazil jersey on rooftop" loading="lazy" /><figcaption><b>Rooftop • ছাদে একদিন</b><span>প্রিয় হলুদ জার্সি পরে তোলা আসল ছবি • AI polished</span></figcaption></figure>
+        <figure class="gallery-item"><img src="photo-garden.jpg" alt="Zubayar Tasin in garden" loading="lazy" /><figcaption><b>Garden • বাগানে</b><span>সবুজের মাঝে তোলা আসল ছবি • AI polished</span></figcaption></figure>
+        <figure class="gallery-item"><img src="photo-grove.jpg" alt="Zubayar Tasin in mango grove" loading="lazy" /><figcaption><b>Nature • গাছের ছায়ায়</b><span>বাগানে হাঁটতে গিয়ে তোলা আসল ছবি • AI polished</span></figcaption></figure>
+        <figure class="gallery-item"><img src="ai-ict.jpg" alt="Zubayar Tasin coding at his desk — AI generated" loading="lazy" /><figcaption><b>Future IT Expert • ভবিষ্যতের আইটি এক্সপার্ট</b><span>কল্পনায় ভবিষ্যতের আমি — AI generated image</span></figcaption></figure>
+        <figure class="gallery-item"><img src="ai-football.jpg" alt="Zubayar Tasin playing football — AI generated" loading="lazy" /><figcaption><b>Football Time • ফুটবল খেলা</b><span>স্কুল মাঠে ফুটবল — AI generated image</span></figcaption></figure>
+        <figure class="gallery-item"><img src="ai-splendor.jpg" alt="Zubayar Tasin riding Hero Splendor bike — AI generated" loading="lazy" /><figcaption><b>Dream Ride • স্বপ্নের রাইড</b><span>Hero Splendor বাইকে চড়ার কল্পনা — AI generated image</span></figcaption></figure>
+        
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2 class="section-title">যোগাযোগ <span>(Contact Me)</span></h2>
+      <div class="contact-card">
+        <p>সোশ্যাল মিডিয়া প্রোফাইলে যুক্ত হতে পারেন অথবা সরাসরি ইমেইলে বার্তা পাঠাতে পারেন:</p>
+        <div class="social-btn-list">
+          <a href="https://www.facebook.com/jubayar.islam.thasin" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fa-brands fa-facebook" style="color:#1877f2"></i> Facebook Profile</a>
+          <a href="https://www.instagram.com/tasi70765" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fa-brands fa-instagram" style="color:#e1306c"></i> Instagram Profile</a>
+          <a href="mailto:tasinonthegamer@gmail.com" class="social-btn"><i class="fa-solid fa-envelope" style="color:#f43f5e"></i> tasinonthegamer@gmail.com</a>
+        </div>
+        <form onsubmit="handleContactSubmit(event)">
+          <div class="form-group"><label for="name">আপনার নাম (Your Name)</label><input type="text" id="name" required placeholder="আপনার নাম লিখুন..." /></div>
+          <div class="form-group"><label for="subject">বিষয় (Subject)</label><input type="text" id="subject" required placeholder="বার্তা প্রেরণের বিষয়..." /></div>
+          <div class="form-group"><label for="message">বার্তা (Message)</label><textarea id="message" rows="4" required placeholder="আপনার বার্তাটি এখানে লিখুন..."></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width:100%"><i class="fa-solid fa-paper-plane"></i> ইমেইল পাঠিয়ে দিন</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><p>© 2026 Jubayar Islam Tasin. Class 8 ICT Portfolio. Designed with Orange Editorial Style.</p></footer>
+
+  <script>
+    const ictQuestions=[
+      {question:"১. কম্পিউটার প্রোগ্রামিংয়ের ধারণার প্রবর্তক বা বিশ্বের প্রথম প্রোগ্রামার কে ছিলেন?",options:["চার্লস ব্যাবেজ","লেডি অ্যাডা লাভলেস","বিল গেটস","স্টিভ জবস"],answerIndex:1,explanation:"অ্যাডা লাভলেসকে বিশ্বের প্রথম কম্পিউটার অ্যালগরিদম বা প্রোগ্রাম রচয়িতা হিসেবে গণ্য করা হয়।"},
+      {question:"২. কম্পিউটারের 'মস্তিষ্ক' বা মূল প্রক্রিয়াকরণ অংশ বলা হয় কোনটিকে?",options:["মনিটর","হার্ডডিস্ক","সিপিইউ (CPU)","কিবোর্ড"],answerIndex:2,explanation:"CPU (Central Processing Unit) কম্পিউটারের যাবতীয় তথ্য প্রক্রিয়াকরণ সম্পন্ন করে।"},
+      {question:"৩. ক্ষতিকর কম্পিউটার 'VIRUS'-এর পূর্ণরূপ কোনটি?",options:["Very Important Resource Under Siege","Vital Information Resources Under Siege","Virtual Internet Resource Utility System","Visual Information Running System"],answerIndex:1,explanation:"১৯৮৩ সালে গবেষক ফ্রেড কোহেন এই নামকরণ করেন (Vital Information Resources Under Siege)।"},
+      {question:"৪. শ্রেণি পরীক্ষার ফলাফল ও জটিল হিসাব-নিকাশ তৈরির জন্য কোন সফটওয়্যারটি ব্যবহৃত হয়?",options:["MS Word","MS Excel (স্প্রেডশিট)","MS PowerPoint","Photoshop"],answerIndex:1,explanation:"মাইক্রোসফট এক্সেল হলো স্প্রেডশিট প্রোগ্রাম, যা গাণিতিক হিসাব ও ডেটা সাজাতে ব্যবহৃত হয়।"},
+      {question:"৫. ইমেইল ঠিকানায় ব্যবহারকারীর নাম ও ডোমেন নামকে আলাদা করার জন্য কোন প্রতীক ব্যবহৃত হয়?",options:["# (হ্যাশ)","$ (ডলার)","@ (অ্যাট দ্য রেট)","& (অ্যান্ড)"],answerIndex:2,explanation:"যেমন: username@gmail.com; এখানে '@' প্রতীকটি দিয়ে দুই অংশ পৃথক করা হয়।"},
+      {question:"৬. LAN-এর পূর্ণরূপ কোনটি?",options:["Large Area Network","Local Area Network","Long Area Network","Logical Area Network"],answerIndex:1,explanation:"LAN (Local Area Network) হলো ছোট এলাকাজুড়ে — যেমন স্কুল বা অফিসে — গড়া কম্পিউটার নেটওয়ার্ক।"},
+      {question:"৭. একটি কেন্দ্রীয় কম্পিউটার/হাবের সাথে সব কম্পিউটার যুক্ত থাকলে সেই নেটওয়ার্ক টপোলজিকে কী বলে?",options:["বাস টপোলজি","রিং টপোলজি","স্টার টপোলজি","মেশ টপোলজি"],answerIndex:2,explanation:"স্টার (Star) টপোলজিতে সব কম্পিউটার একটি কেন্দ্রীয় হাব বা সুইচের সাথে যুক্ত থাকে।"},
+      {question:"৮. নিরাপদ ও শক্তিশালী পাসওয়ার্ডে কোনটি থাকা সবচেয়ে ভালো?",options:["শুধু নিজের নাম","শুধু জন্মতারিখ","বড়-ছোট অক্ষর, সংখ্যা ও প্রতীকের মিশ্রণ","শুধু 123456"],answerIndex:2,explanation:"অক্ষর, সংখ্যা ও প্রতীক মেশানো লম্বা পাসওয়ার্ড অনুমান করা কঠিন — এটাই নিরাপদ।"},
+      {question:"৯. MS Word-এ নির্বাচিত লেখা বোল্ড (Bold) করার কীবোর্ড শর্টকাট কোনটি?",options:["Ctrl + I","Ctrl + B","Ctrl + U","Ctrl + S"],answerIndex:1,explanation:"Ctrl+B = Bold, Ctrl+I = Italic, Ctrl+U = Underline, Ctrl+S = Save।"},
+      {question:"১০. WWW-এর পূর্ণরূপ কোনটি?",options:["World Wide Web","Web World Wide","Wide World Web","World Web Window"],answerIndex:0,explanation:"WWW (World Wide Web) হলো ইন্টারনেটে পরস্পর যুক্ত ওয়েবপেজের বিশাল সংগ্রহ।"}
+    ];
+    const quizSets={
+      ict:ictQuestions,
+      math:[
+        {question:"১. 2x + 6 = 14 হলে x-এর মান কত?",options:["3","4","5","6"],answerIndex:1,explanation:"2x = 14 − 6 = 8, তাই x = 8 ÷ 2 = 4।"},
+        {question:"২. ত্রিভুজের তিন কোণের সমষ্টি কত ডিগ্রি?",options:["90°","120°","180°","360°"],answerIndex:2,explanation:"যেকোনো ত্রিভুজের তিন কোণের সমষ্টি সবসময় 180°।"},
+        {question:"৩. 200-এর 15% = কত?",options:["20","25","30","35"],answerIndex:2,explanation:"200 × 15/100 = 30।"},
+        {question:"৪. এক পাশের দৈর্ঘ্য 5 একক হলে বর্গক্ষেত্রের ক্ষেত্রফল কত?",options:["20 বর্গএকক","25 বর্গএকক","15 বর্গএকক","10 বর্গএকক"],answerIndex:1,explanation:"বর্গের ক্ষেত্রফল = বাহু × বাহু = 5 × 5 = 25 বর্গএকক।"},
+        {question:"৫. নিচের কোনটি মৌলিক সংখ্যা?",options:["9","15","7","21"],answerIndex:2,explanation:"7 শুধু 1 ও নিজে দিয়েই ভাগ যায় — তাই মৌলিক। 9, 15, 21 যৌগিক।"}
+      ],
+      english:[
+        {question:"1. What is the past tense of 'go'?",options:["goed","went","gone to school","going"],answerIndex:1,explanation:"'Go' is irregular — its past form is 'went' (past participle: gone)."},
+        {question:"2. Which word is a synonym of 'happy'?",options:["sad","angry","joyful","tired"],answerIndex:2,explanation:"'Joyful' means full of joy — same meaning as 'happy'."},
+        {question:"3. What is the plural of 'child'?",options:["childs","childes","children","childrens"],answerIndex:2,explanation:"'Child' has an irregular plural: 'children'."},
+        {question:"4. He ___ to school every day.",options:["go","goes","going to","gone"],answerIndex:1,explanation:"With he/she/it (third person singular), we add -es: 'goes'."},
+        {question:"5. ___ sun rises in the east.",options:["A","An","The","No article"],answerIndex:2,explanation:"Unique things (the sun, the moon, the earth) take 'the'."}
+      ],
+      bangla:[
+        {question:"১. 'বিদ্যালয়' শব্দের সঠিক সন্ধি বিচ্ছেদ কোনটি?",options:["বিদ্যা + লয়","বিদ্যা + আলয়","বিদ + আলয়","বিদ্যাল + য়"],answerIndex:1,explanation:"বিদ্যা + আলয় = বিদ্যালয় (স্বরসন্ধি)।"},
+        {question:"২. কাজী নজরুল ইসলাম কোন উপাধিতে পরিচিত?",options:["বিশ্বকবি","বিদ্রোহী কবি","পল্লীকবি","কবিগুরু"],answerIndex:1,explanation:"'বিদ্রোহী' কবিতার জন্য নজরুল 'বিদ্রোহী কবি' নামে খ্যাত।"},
+        {question:"৩. 'অগ্নি' শব্দের সমার্থক শব্দ কোনটি?",options:["পানি","বাতাস","আগুন","মাটি"],answerIndex:2,explanation:"অগ্নি মানে আগুন; সমার্থক আরও — অনল, পাবক, হুতাশন।"},
+        {question:"৪. বাংলা বর্ণমালায় স্বরবর্ণ মোট কয়টি?",options:["10টি","11টি","12টি","39টি"],answerIndex:1,explanation:"স্বরবর্ণ ১১টি: অ আ ই ঈ উ ঊ ঋ এ ঐ ও ঔ।"},
+        {question:"৫. 'আমার সোনার বাংলা' গানটির রচয়িতা কে?",options:["কাজী নজরুল ইসলাম","রবীন্দ্রনাথ ঠাকুর","জসীমউদ্দীন","সুকান্ত ভট্টাচার্য"],answerIndex:1,explanation:"রবীন্দ্রনাথ ঠাকুরের এই গানই বাংলাদেশের জাতীয় সংগীতের প্রথম দশ লাইন।"}
+      ],
+      science:[
+        {question:"১. পানির রাসায়নিক সংকেত কোনটি?",options:["CO₂","O₂","H₂O","H₂SO₄"],answerIndex:2,explanation:"পানি = দুই পরমাণু হাইড্রোজেন + এক পরমাণু অক্সিজেন = H₂O।"},
+        {question:"২. সালোকসংশ্লেষণে উদ্ভিদ বায়ু থেকে কোন গ্যাস গ্রহণ করে?",options:["অক্সিজেন","নাইট্রোজেন","কার্বন ডাই-অক্সাইড","হাইড্রোজেন"],answerIndex:2,explanation:"উদ্ভিদ CO₂ গ্রহণ করে খাদ্য তৈরি করে এবং অক্সিজেন ছাড়ে।"},
+        {question:"৩. পৃথিবীর সবচেয়ে কাছের তারা কোনটি?",options:["শুক্র","সূর্য","ধ্রুবতারা","মঙ্গল"],answerIndex:1,explanation:"সূর্যই পৃথিবীর নিকটতম তারা — দূরত্ব প্রায় ১৫ কোটি কিলোমিটার।"},
+        {question:"৪. মানুষের হৃৎপিণ্ডে মোট কয়টি প্রকোষ্ঠ (chamber) থাকে?",options:["2টি","3টি","4টি","5টি"],answerIndex:2,explanation:"দুটি অলিন্দ (atrium) ও দুটি নিলয় (ventricle) — মোট ৪টি প্রকোষ্ঠ।"},
+        {question:"৫. নিচের কোনটি নবায়নযোগ্য শক্তির উৎস?",options:["কয়লা","পেট্রোল","সৌরশক্তি","প্রাকৃতিক গ্যাস"],answerIndex:2,explanation:"সূর্যের শক্তি ফুরিয়ে যায় না — তাই সৌরশক্তি নবায়নযোগ্য।"}
+      ]
+    };
+    let quizQuestions=quizSets.ict;
+    function selectQuizSet(key){
+      quizQuestions=quizSets[key];
+      document.querySelectorAll('.quiz-set-btn').forEach(b=>b.classList.toggle('active',b.dataset.set===key));
+      document.getElementById('quiz-result-view').style.display='none';
+      document.getElementById('quiz-content').style.display='block';
+      currentQuestionIndex=0;score=0;renderQuestion();
+    }
+    let currentQuestionIndex=0,score=0;
+    function renderQuestion(){
+      const q=quizQuestions[currentQuestionIndex];
+      document.getElementById('quiz-question-number').innerText=`প্রশ্ন ${currentQuestionIndex+1} / ${quizQuestions.length}`;
+      document.getElementById('quiz-score-tracker').innerText=`Score: ${score}`;
+      document.getElementById('quiz-progress').style.width=`${((currentQuestionIndex+1)/quizQuestions.length)*100}%`;
+      document.getElementById('quiz-question-text').innerText=q.question;
+      const container=document.getElementById('quiz-options-container');container.innerHTML='';
+      const feedback=document.getElementById('quiz-feedback');feedback.style.display='none';feedback.className='feedback-box';
+      document.getElementById('quiz-next-btn').style.display='none';
+      q.options.forEach((opt,idx)=>{const btn=document.createElement('button');btn.className='option-btn';btn.innerHTML=`<span>${opt}</span><i class="fa-regular fa-circle"></i>`;btn.onclick=()=>selectAnswer(idx);container.appendChild(btn);});
+    }
+    function selectAnswer(selectedIndex){
+      const q=quizQuestions[currentQuestionIndex];
+      const buttons=document.querySelectorAll('.option-btn');buttons.forEach(b=>b.disabled=true);
+      const feedback=document.getElementById('quiz-feedback');feedback.style.display='block';
+      if(selectedIndex===q.answerIndex){score++;buttons[selectedIndex].classList.add('correct');buttons[selectedIndex].querySelector('i').className='fa-solid fa-circle-check';feedback.classList.add('correct');feedback.innerHTML=`🎉 <strong>সঠিক উত্তর!</strong> ${q.explanation}`;}
+      else{buttons[selectedIndex].classList.add('wrong');buttons[selectedIndex].querySelector('i').className='fa-solid fa-circle-xmark';buttons[q.answerIndex].classList.add('correct');buttons[q.answerIndex].querySelector('i').className='fa-solid fa-circle-check';feedback.classList.add('wrong');feedback.innerHTML=`❌ <strong>ভুল উত্তর!</strong> সঠিক উত্তর: "${q.options[q.answerIndex]}"। ${q.explanation}`;}
+      document.getElementById('quiz-score-tracker').innerText=`Score: ${score}`;
+      const nextBtn=document.getElementById('quiz-next-btn');nextBtn.style.display='inline-flex';
+      nextBtn.innerHTML=currentQuestionIndex===quizQuestions.length-1?'ফলাফল দেখুন <i class="fa-solid fa-trophy"></i>':'পরবর্তী প্রশ্ন <i class="fa-solid fa-arrow-right"></i>';
+    }
+    function nextQuestion(){currentQuestionIndex++;if(currentQuestionIndex<quizQuestions.length){renderQuestion();}else{showResults();}}
+    function showResults(){
+      document.getElementById('quiz-content').style.display='none';document.getElementById('quiz-result-view').style.display='block';
+      document.getElementById('quiz-final-score').innerHTML=`আপনি ${quizQuestions.length}টির মধ্যে <strong>${score}</strong> টি সঠিক উত্তর দিয়েছেন!`;
+      const title=document.getElementById('quiz-final-title');
+      title.innerText=score===quizQuestions.length?'অসাধারণ! আপনি ক্লাস ৮ আইসিটি চ্যাম্পিয়ন! 🌟':score>=Math.ceil(quizQuestions.length*0.6)?'দারুণ হয়েছে! আইসিটিতে আপনার ভালো প্রস্তুতি রয়েছে! 👍':'চেষ্টা চালিয়ে যান! আরেকটু পড়লেই দারুণ করবেন! 💡';
+    }
+    function restartQuiz(){currentQuestionIndex=0;score=0;document.getElementById('quiz-result-view').style.display='none';document.getElementById('quiz-content').style.display='block';renderQuestion();}
+
+    // Reaction game
+    let reactionState='idle',reactionStart=0,reactionTimer=null,reactionBest=null,reactionTries=[];
+    function reactionClick(){
+      const box=document.getElementById('reaction-box'),out=document.getElementById('reaction-result'),stats=document.getElementById('reaction-stats');
+      if(reactionState==='idle'||reactionState==='done'){
+        reactionState='waiting';box.className='reaction-box';box.innerText='Wait for green...';out.innerText='';
+        reactionTimer=setTimeout(()=>{reactionState='ready';reactionStart=Date.now();box.className='reaction-box waiting';box.innerText='CLICK! ⚡';},1200+Math.random()*2800);
+      }else if(reactionState==='waiting'){
+        clearTimeout(reactionTimer);reactionState='idle';box.className='reaction-box idle';box.innerText='Too soon! 😅 Click to try again';out.innerText='সবুজ হওয়ার আগেই ক্লিক করেছো!';
+      }else if(reactionState==='ready'){
+        const ms=Date.now()-reactionStart;reactionState='done';reactionTries.push(ms);
+        if(reactionBest===null||ms<reactionBest)reactionBest=ms;
+        const avg=Math.round(reactionTries.reduce((a,b)=>a+b,0)/reactionTries.length);
+        const rating=ms<200?'⚡ Lightning! তুমি বিদ্যুতের মতো দ্রুত!':ms<280?'🔥 Super fast! দারুণ reflex!':ms<350?'👍 Good! আরেকটু হলেই pro!':'🐢 Slow! Practice করলেই দ্রুত হবে!';
+        box.className='reaction-box idle';box.innerText=`${ms} ms — Click to play again`;
+        out.innerText=rating;stats.innerText=`Best: ${reactionBest} ms • Average: ${avg} ms • Tries: ${reactionTries.length}`;
+      }
+    }
+
+    // Typing game
+    const typingSentences=["The quick brown fox jumps over the lazy dog","I love learning computer science every day","Practice makes a student perfect in typing","Technology is the future of our country"];
+    let typingTimer=null,typingTime=30,typingTarget='',typingStarted=false,typingStartTime=0;
+    function renderTypingText(){
+      document.getElementById('typing-text').innerHTML=typingTarget.split('').map(c=>`<span>${c}</span>`).join('');
+    }
+    function typingStats(){
+      const typed=document.getElementById('typing-input').value;let correct=0;
+      const spans=document.querySelectorAll('#typing-text span');
+      spans.forEach((s,i)=>{s.className=i<typed.length?(typed[i]===typingTarget[i]?'char-correct':'char-wrong'):'';});
+      for(let i=0;i<Math.min(typed.length,typingTarget.length);i++){if(typed[i]===typingTarget[i])correct++;}
+      const mins=(Date.now()-typingStartTime)/60000;
+      const wpm=mins>0?Math.round((correct/5)/mins):0;
+      const acc=typed.length?Math.round((correct/typed.length)*100):100;
+      document.getElementById('typing-live').innerText=`WPM: ${wpm} • Accuracy: ${acc}%`;
+      document.getElementById('typing-progress-fill').style.width=`${Math.round((typed.length/typingTarget.length)*100)}%`;
+      return {correct,wpm,acc};
+    }
+    function startTyping(){
+      clearInterval(typingTimer);typingTime=30;typingStarted=true;typingStartTime=Date.now();
+      typingTarget=typingSentences[Math.floor(Math.random()*typingSentences.length)];
+      renderTypingText();
+      const input=document.getElementById('typing-input');input.value='';input.disabled=false;input.focus();
+      document.getElementById('typing-time').innerText=typingTime;document.getElementById('typing-result').innerText='';document.getElementById('typing-live').innerText='';
+      document.getElementById('typing-progress-fill').style.width='0%';
+      typingTimer=setInterval(()=>{typingTime--;document.getElementById('typing-time').innerText=typingTime;if(typingTime<=0){clearInterval(typingTimer);finishTyping();}},1000);
+    }
+    function finishTyping(){
+      typingStarted=false;const input=document.getElementById('typing-input');input.disabled=true;
+      const s=typingStats();
+      const grade=s.wpm>=35?'🏆 Typing Pro!':s.wpm>=22?'🔥 দারুণ speed!':s.wpm>=12?'👍 ভালো, practice করলেই বাড়বে!':'💪 শুরুটা হয়েছে, চালিয়ে যাও!';
+      document.getElementById('typing-result').innerText=`⌨️ Final: ${s.wpm} WPM • Accuracy: ${s.acc}% — ${grade}`;
+    }
+
+    // Memory game
+    const memoryIcons=['💻','🚀','🎮','⚽','📚','🎧'];
+    let memoryFirst=null,memoryLock=false,memoryMoves=0,memoryMatched=0,memorySeconds=0,memoryTimer=null,memoryTimerOn=false;
+    function memoryClock(){const m=Math.floor(memorySeconds/60),s=memorySeconds%60;document.getElementById('memory-time').innerText=`${m}:${String(s).padStart(2,'0')}`;}
+    function startMemory(){
+      memoryFirst=null;memoryLock=false;memoryMoves=0;memoryMatched=0;memorySeconds=0;memoryTimerOn=false;
+      clearInterval(memoryTimer);memoryClock();
+      document.getElementById('memory-moves').innerText='0';document.getElementById('memory-matched').innerText='0';document.getElementById('memory-result').innerText='';
+      const deck=[...memoryIcons,...memoryIcons].sort(()=>Math.random()-0.5);
+      const grid=document.getElementById('memory-grid');grid.innerHTML='';
+      deck.forEach(icon=>{const card=document.createElement('button');card.className='memory-card';card.innerText=icon;card.dataset.icon=icon;card.onclick=()=>flipCard(card);grid.appendChild(card);});
+    }
+    function flipCard(card){
+      if(memoryLock||card.classList.contains('flipped')||card.classList.contains('matched'))return;
+      if(!memoryTimerOn){memoryTimerOn=true;memoryTimer=setInterval(()=>{memorySeconds++;memoryClock();},1000);}
+      card.classList.add('flipped');
+      if(!memoryFirst){memoryFirst=card;return;}
+      memoryMoves++;document.getElementById('memory-moves').innerText=memoryMoves;
+      if(memoryFirst.dataset.icon===card.dataset.icon){
+        memoryFirst.classList.replace('flipped','matched');card.classList.replace('flipped','matched');memoryFirst=null;memoryMatched++;
+        document.getElementById('memory-matched').innerText=memoryMatched;
+        if(memoryMatched===memoryIcons.length){clearInterval(memoryTimer);const stars=memoryMoves<=10?'⭐⭐⭐':memoryMoves<=15?'⭐⭐':'⭐';document.getElementById('memory-result').innerText=`🏆 জিতেছো! ${stars} • Time: ${document.getElementById('memory-time').innerText} • Moves: ${memoryMoves}`;}
+      }else{
+        memoryLock=true;const first=memoryFirst;memoryFirst=null;
+        setTimeout(()=>{first.classList.remove('flipped');card.classList.remove('flipped');memoryLock=false;},700);
+      }
+    }
+
+    // Guess the Number game
+    let guessSecret=0,guessAttempts=0,guessDone=false;
+    function startGuess(){
+      guessSecret=Math.floor(Math.random()*100)+1;guessAttempts=0;guessDone=false;
+      document.getElementById('guess-input').value='';document.getElementById('guess-face').innerText='🤔';
+      document.getElementById('guess-result').innerText='Attempts: 0 — নতুন সংখ্যা ready!';
+    }
+    function makeGuess(){
+      if(guessDone){document.getElementById('guess-result').innerText='🏁 এই round শেষ — New Number চাপো!';return;}
+      const val=parseInt(document.getElementById('guess-input').value,10),out=document.getElementById('guess-result'),face=document.getElementById('guess-face');
+      if(isNaN(val)||val<1||val>100){out.innerText='⚠️ ১ থেকে ১০০-এর মধ্যে একটা সংখ্যা দাও!';return;}
+      guessAttempts++;
+      const diff=Math.abs(val-guessSecret);
+      if(val===guessSecret){guessDone=true;face.innerText='🎉';out.innerText=`🎉 সঠিক! সংখ্যাটা ছিল ${guessSecret} — মাত্র ${guessAttempts} attempt-এ পেরেছো!`;}
+      else if(diff<=5){face.innerText='🔥';out.innerText=val<guessSecret?`🔥 আগুনের কাছাকাছি! আরেকটু বড় হবে। Attempts: ${guessAttempts}`:`🔥 আগুনের কাছাকাছি! আরেকটু ছোট হবে। Attempts: ${guessAttempts}`;}
+      else if(diff<=15){face.innerText='🌡️';out.innerText=val<guessSecret?`🌡️ গরম হচ্ছে — বড় guess করো। Attempts: ${guessAttempts}`:`🌡️ গরম হচ্ছে — ছোট guess করো। Attempts: ${guessAttempts}`;}
+      else{face.innerText='❄️';out.innerText=val<guessSecret?`❄️ অনেক দূরে — অনেক বড় হবে। Attempts: ${guessAttempts}`:`❄️ অনেক দূরে — অনেক ছোট হবে। Attempts: ${guessAttempts}`;}
+    }
+
+    // Snake game
+    const sCanvas=document.getElementById('snake-canvas'),sCtx=sCanvas.getContext('2d');
+    let snake=[],sDir={x:1,y:0},sNext={x:1,y:0},sFood=null,sScore=0,sTimer=null,sRunning=false;
+    function drawSnake(){
+      sCtx.fillStyle='#0a1206';sCtx.fillRect(0,0,300,300);
+      sCtx.fillStyle='#f87171';sCtx.beginPath();sCtx.arc(sFood.x*20+10,sFood.y*20+10,8,0,7);sCtx.fill();
+      snake.forEach((seg,i)=>{sCtx.fillStyle=i===0?'#b2ff66':'#7fff00';sCtx.fillRect(seg.x*20+1,seg.y*20+1,18,18);});
+    }
+    function placeFood(){do{sFood={x:Math.floor(Math.random()*15),y:Math.floor(Math.random()*15)};}while(snake.some(s=>s.x===sFood.x&&s.y===sFood.y));}
+    function startSnake(){
+      clearInterval(sTimer);snake=[{x:7,y:7}];sDir={x:1,y:0};sNext={x:1,y:0};sScore=0;sRunning=true;placeFood();
+      document.getElementById('snake-result').innerText='Score: 0';
+      sTimer=setInterval(snakeStep,140);drawSnake();
+    }
+    function snakeStep(){
+      sDir=sNext;const head={x:snake[0].x+sDir.x,y:snake[0].y+sDir.y};
+      if(head.x<0||head.y<0||head.x>=15||head.y>=15||snake.some(s=>s.x===head.x&&s.y===head.y)){
+        clearInterval(sTimer);sRunning=false;document.getElementById('snake-result').innerText=`💥 Game Over! Final Score: ${sScore} — আবার Start করো!`;return;
+      }
+      snake.unshift(head);
+      if(head.x===sFood.x&&head.y===sFood.y){sScore+=10;document.getElementById('snake-result').innerText=`Score: ${sScore}`;placeFood();}else{snake.pop();}
+      drawSnake();
+    }
+    function setDir(x,y){if(!sRunning)return;if(sDir.x===-x&&sDir.y===-y)return;sNext={x,y};}
+    document.addEventListener('keydown',e=>{
+      if(!sRunning)return;
+      const k=e.key;
+      if(k==='ArrowUp'){setDir(0,-1);e.preventDefault();}else if(k==='ArrowDown'){setDir(0,1);e.preventDefault();}
+      else if(k==='ArrowLeft'){setDir(-1,0);e.preventDefault();}else if(k==='ArrowRight'){setDir(1,0);e.preventDefault();}
+    });
+
+    // Tic Tac Toe
+    let tttBoard=[],tttOver=false,tttWins={you:0,com:0,draw:0};
+    const tttLines=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+    function tttWinner(b){for(const line of tttLines){const[a,c,d]=line;if(b[a]&&b[a]===b[c]&&b[a]===b[d])return{winner:b[a],line};}return b.every(x=>x)?{winner:'draw',line:[]}:null;}
+    function startTTT(){
+      tttBoard=Array(9).fill('');tttOver=false;
+      const grid=document.getElementById('ttt-grid');grid.innerHTML='';
+      tttBoard.forEach((_,i)=>{const btn=document.createElement('button');btn.className='ttt-cell';btn.onclick=()=>tttMove(i,btn);grid.appendChild(btn);});
+      document.getElementById('ttt-result').innerText='তোমার পালা — যেকোনো ঘরে ক্লিক করো!';
+    }
+    function tttRender(winLine=[]){
+      document.querySelectorAll('.ttt-cell').forEach((cell,i)=>{cell.innerText=tttBoard[i];cell.style.color=tttBoard[i]==='X'?'#b2ff66':'#7dd3fc';if(winLine.includes(i))cell.classList.add('win');});
+    }
+    function tttMove(i,btn){
+      if(tttOver||tttBoard[i])return;
+      tttBoard[i]='X';tttRender();
+      let res=tttWinner(tttBoard);if(res)return tttEnd(res);
+      const empty=tttBoard.map((v,idx)=>v?'':idx).filter(v=>v!=='');
+      // computer: win if possible, block if needed, else random
+      let pick=null;
+      for(const target of ['O','X']){for(const idx of empty){const copy=[...tttBoard];copy[idx]=target;if(tttWinner(copy)?.winner===target){pick=idx;break;}}if(pick!==null)break;}
+      if(pick===null)pick=empty[Math.floor(Math.random()*empty.length)];
+      tttBoard[pick]='O';tttRender();
+      res=tttWinner(tttBoard);if(res)return tttEnd(res);
+      document.getElementById('ttt-result').innerText='তোমার পালা!';
+    }
+    function tttEnd(res){
+      tttOver=true;tttRender(res.line);
+      const out=document.getElementById('ttt-result');
+      if(res.winner==='X'){tttWins.you++;out.innerText='🎉 তুমি জিতেছো! দারুণ!';}
+      else if(res.winner==='O'){tttWins.com++;out.innerText='🤖 কম্পিউটার জিতলো — আবার চেষ্টা করো!';}
+      else{tttWins.draw++;out.innerText='🤝 ড্র! দুজনেই সমান!';}
+      document.getElementById('ttt-score').innerText=`You: ${tttWins.you} • Computer: ${tttWins.com} • Draw: ${tttWins.draw}`;
+    }
+
+    // ICT Word Scramble
+    const scrambleWords=[
+      {word:'COMPUTER',hint:'তথ্য প্রক্রিয়াকরণের প্রধান যন্ত্র'},
+      {word:'INTERNET',hint:'বিশ্বজুড়ে নেটওয়ার্কের নেটওয়ার্ক'},
+      {word:'KEYBOARD',hint:'টাইপ করার ইনপুট ডিভাইস'},
+      {word:'NETWORK',hint:'কম্পিউটারের পরস্পর সংযোগ'},
+      {word:'BROWSER',hint:'ওয়েবপেজ দেখার সফটওয়্যার — যেমন Chrome'},
+      {word:'PRINTER',hint:'লেখা/ছবি কাগজে ছাপানোর যন্ত্র'},
+      {word:'PASSWORD',hint:'অ্যাকাউন্ট সুরক্ষার গোপন কোড'},
+      {word:'MONITOR',hint:'কম্পিউটারের পর্দা'}
+    ];
+    let scrambleCurrent=null,scrambleScore=0,scrambleUsed=[];
+    function nextScramble(){
+      if(scrambleUsed.length===scrambleWords.length)scrambleUsed=[];
+      let idx;do{idx=Math.floor(Math.random()*scrambleWords.length);}while(scrambleUsed.includes(idx));
+      scrambleUsed.push(idx);scrambleCurrent=scrambleWords[idx];
+      let shuffled;do{shuffled=scrambleCurrent.word.split('').sort(()=>Math.random()-0.5).join('');}while(shuffled===scrambleCurrent.word);
+      document.getElementById('scramble-word').innerText=shuffled;
+      document.getElementById('scramble-hint').innerText='💡 Hint: '+scrambleCurrent.hint;
+      document.getElementById('scramble-input').value='';
+      document.getElementById('scramble-result').innerText=`Score: ${scrambleScore}`;
+    }
+    function checkScramble(){
+      const val=document.getElementById('scramble-input').value.trim().toUpperCase(),out=document.getElementById('scramble-result');
+      if(!scrambleCurrent)return;
+      if(val===scrambleCurrent.word){scrambleScore+=10;out.innerText=`🎉 সঠিক! Score: ${scrambleScore} — Next Word চাপো!`;}
+      else{out.innerText=`❌ হলো না — আবার চেষ্টা করো! Score: ${scrambleScore}`;}
+    }
+
+    function handleContactSubmit(event){
+      event.preventDefault();
+      const name=document.getElementById('name').value.trim(),subject=document.getElementById('subject').value.trim(),message=document.getElementById('message').value.trim();
+      const body=`Hi Tasin,\n\n${message}\n\nFrom: ${name}`;
+      window.location.href=`mailto:tasinonthegamer@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+    window.onload=()=>{renderQuestion();typingTarget=typingSentences[0];renderTypingText();document.getElementById('typing-input').addEventListener('input',()=>{if(typingStarted)typingStats();});document.getElementById('guess-input').addEventListener('keydown',e=>{if(e.key==='Enter')makeGuess();});startMemory();startGuess();startTTT();nextScramble();document.getElementById('scramble-input').addEventListener('keydown',e=>{if(e.key==='Enter')checkScramble();});};
+  </script>
+</body>
+</html>
