@@ -212,6 +212,27 @@
     .rotator-inner{display:flex;flex-direction:column;animation:rotatorSlide 10s cubic-bezier(.65,0,.35,1) infinite}
     .rotator-inner span{height:1.3em;line-height:1.3em;font-weight:700;color:#0d2603;white-space:nowrap}
     @keyframes rotatorSlide{0%,20%{transform:translateY(0)}25%,45%{transform:translateY(-1.3em)}50%,70%{transform:translateY(-2.6em)}75%,95%{transform:translateY(-3.9em)}100%{transform:translateY(-5.2em)}}
+
+    /* ===== Mobile nav fix: menu যেন page ঢেকে না ফেলে ===== */
+    section{scroll-margin-top:84px}
+    @media(max-width:650px){
+      nav{padding:.55rem .9rem;gap:.45rem}
+      .brand{font-size:1.08rem}
+      .nav-links{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:1.05rem;width:100%;order:3;padding:.15rem 0 .3rem;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+      .nav-links::-webkit-scrollbar{display:none}
+      .nav-links a{white-space:nowrap;font-size:.88rem}
+      header .btn{padding:.42rem .85rem;font-size:.84rem}
+      section{scroll-margin-top:118px}
+    }
+
+    footer .credit{margin-top:.55rem;color:var(--text-main);font-size:.95rem}
+    footer .credit a,footer .credit-id a{color:var(--primary-light);text-decoration:none}
+    footer .credit a:hover,footer .credit-id a:hover{text-decoration:underline}
+    footer .credit-id{margin-top:.25rem;font-size:.86rem}
+
+    footer .credit-fb{margin-top:.45rem}
+    footer .credit-fb{color:var(--text-muted);font-size:.9rem}footer .credit-fb a{color:var(--primary-light);text-decoration:none;font-weight:600}footer .credit-fb a:hover{text-decoration:underline}
+    
 </style>
 </head>
 <body>
@@ -225,7 +246,8 @@
         <li><a href="#qa">Q&amp;A</a></li>
         <li><a href="#games">Fun Games</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="developer.html">Developer</a></li>
+          <li><a href="#contact">Contact</a></li>
       </ul>
       <a href="#contact" class="btn btn-primary btn-sm" style="border-radius:999px">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
     </nav>
@@ -449,7 +471,7 @@
       </div>
     </section>
   </main>
-  <footer><p>© 2026 Jubayar Islam Tasin. Class 8 ICT Portfolio. Designed with Orange Editorial Style.</p></footer>
+  <footer><p>© 2026 Jubayar Islam Tasin. Portfolio.</p><p class="credit">Designed &amp; Developed by <a href="https://jrdigitalstudio.netlify.app/" target="_blank" rel="noopener"><b>JR Digital Studio</b></a></p><p class="credit-fb">Developer: <a href="https://www.facebook.com/itzjewelrana" target="_blank" rel="noopener" aria-label="Developer Facebook"><i class="fa-brands fa-facebook"></i> Facebook</a></p></footer>
 
   <script>
     const ictQuestions=[
